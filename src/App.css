@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose&display=swap');
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1240px;
+  margin: 43px auto;
+  align-items: center;
+}
+
+.nav-header img {
+  height: 36px;
+}
+
+.nav-header ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-header li {
+  margin-right: 48px;
+  font-size: 20px;
+}
+
+#nav_btn {
+  background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+  border-radius: 10px;
+  height: 48px;
+  color: #ffffff;
+  padding: 0 26px;
+  border: none;
+  font-family: "Red Rose", sans-serif;
+}
