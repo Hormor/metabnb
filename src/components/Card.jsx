@@ -15,7 +15,7 @@ export default function Card({ item }) {
       </div>
       <div className="mt-2 flex space-x-2">
         {[...Array(item.rating)].map((item, i) => {
-          return <img src={starIcon} alt="" srcset="" />;
+          return <img src={starIcon} alt="" key={i} />;
         })}
       </div>
     </div>

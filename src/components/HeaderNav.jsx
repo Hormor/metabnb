@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import logo from "../assets/logo.svg";
 
 export default function HeaderNav() {
@@ -6,8 +7,12 @@ export default function HeaderNav() {
     <nav className="flex justify-between items-center max-w-1240 mx-auto mt-10">
       <img src={logo} alt="logo" className="h-9" />
       <ul className="flex space-x-10">
-        <li>Home</li>
-        <li>Place to stay</li>
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/places-to-stay">Place to stay</a>
+        </li>
         <li>NFTs</li>
         <li>Community</li>
       </ul>

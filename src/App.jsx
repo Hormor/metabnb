@@ -14,12 +14,12 @@ function App() {
 
   return (
     <div className="font-red-rose">
-      <HeaderNav />
+      {/* <HeaderNav /> */}
       <Introduction />
       <LogoSection />
       <Inspirations />
       <Nft />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

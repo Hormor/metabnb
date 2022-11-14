@@ -24,7 +24,7 @@ const inspirations = [
     price: "2MBT per night",
     distance: "2345km away",
     availability: "available for 2weeks stay",
-    rating: 4,
+    rating: 5,
   },
   {
     image: image3,
