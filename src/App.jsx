@@ -4,6 +4,8 @@ import "./App.css";
 import HeaderNav from "./components/HeaderNav";
 import Introduction from "./components/Introduction";
 import LogoSection from "./components/LogoSection";
+import Inspirations from "./components/Inspirations";
+import Nft from "./components/Nft";
 
 function App() {
   // const [count, setCount] = useState(10);
@@ -14,6 +16,8 @@ function App() {
       <HeaderNav />
       <Introduction />
       <LogoSection />
+      <Inspirations />
+      <Nft />
     </div>
   );
 }
