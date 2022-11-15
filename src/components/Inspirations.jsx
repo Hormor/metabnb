@@ -78,11 +78,11 @@ const inspirations = [
 
 export default function Inspirations() {
   return (
-    <div className="max-w-1240 mx-auto">
-      <h1 className="font-bold text-5xl mt-10 text-center">
+    <div className="container">
+      <h1 className="font-bold text-3xl sm:text-5xl mt-10 text-center">
         Inspiration for your next adventure
       </h1>
-      <div className="grid grid-cols-4 gap-6 mt-11">
+      <div className="grid sm:grid-cols-3 lg:grid-cols-4  gap-6 mt-8 sm:mt-11 mb-12">
         {inspirations.map((m, i) => {
           return <Card key={i} item={m} />;
         })}

@@ -19,8 +19,8 @@ import frame16 from "../assets/images/16.png";
 import Card from "../components/Card";
 
 const places = [
-  "Resturant",
-  "Cottge",
+  "Restaurant",
+  "Cottage",
   "Castle",
   "Fantasy city",
   "Beach",
@@ -162,20 +162,25 @@ const details = [
 
 export default function PlacesToStay() {
   return (
-    <div className="max-w-1240 mx-auto">
-      <div className="flex justify-between items-center mt-[127px] ">
-        <nav>
-          <ul className="flex space-x-14 ">
+    <div className="container">
+      <div className="flex justify-between items-center mt-8 lg:mt-[127px] w-full">
+        <nav className="w-full overflow-x-auto">
+          <ul className="flex space-x-6 sm:space-x-14 ">
             {places.map((item, i) => {
-              return <li key={i}>{item}</li>;
+              return (
+                <li key={i} className="min-w-fit">
+                  {item}
+                </li>
+              );
             })}
           </ul>
         </nav>
-        <button className="flex border border-[#B4B4B4] rounded-lg text-[#333333] text-base px-4 py-4">
-          <span className="mr-10">Location</span> <img src={icon} alt="Icon" />
+        <button className="flex border border-[#B4B4B4] rounded-lg text-[#333333] text-base p-2 sm:p-4 ml-2">
+          <span className="mr-10 hidden sm:inline">Location</span>{" "}
+          <img src={icon} alt="Icon" />
         </button>
       </div>
-      <div className="grid grid-cols-4 gap-6 mt-[77px] mb-[92px]">
+      <div className="grid sm:grid-cols-3 lg:grid-cols-4 gap-6 my-6 lg:mt-[77px] sm:mb-[92px]">
         {details.map((m, i) => {
           return <Card key={i} item={m} />;
         })}

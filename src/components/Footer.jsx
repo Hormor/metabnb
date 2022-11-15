@@ -7,10 +7,10 @@ import twitter from "../assets/twitter.png";
 export default function Footer() {
   return (
     <div className="flex justify-between bg-[#1D1D1E] text-white">
-      <div className="max-w-1240 flex justify-between mx-auto w-full my-14">
+      <div className="container flex flex-col sm:flex-row space-y-8 sm:space-y-0 justify-between mx-auto w-full my-14">
         <div>
-          <img src={logoWhite} alt="Metabnb Image" />
-          <div className="flex space-x-8 mt-24 mb-14">
+          <img src={logoWhite} alt="Metabnb Image" className="h-7 sm:h-auto" />
+          <div className="flex space-x-8 my-6 sm:mt-24 sm:mb-14">
             <img src={facebook} alt="Fecebook Image" />
             <img src={instagram} alt="Instagram Image" />
             <img src={twitter} alt="Twitter Image" />
