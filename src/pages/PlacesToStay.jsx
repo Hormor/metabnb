@@ -180,7 +180,7 @@ export default function PlacesToStay() {
           <img src={icon} alt="Icon" />
         </button>
       </div>
-      <div className="grid sm:grid-cols-3 lg:grid-cols-4 gap-6 my-6 lg:mt-[77px] sm:mb-[92px]">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 my-6 lg:mt-[77px] sm:mb-[92px]">
         {details.map((m, i) => {
           return <Card key={i} item={m} />;
         })}

@@ -82,7 +82,7 @@ export default function Inspirations() {
       <h1 className="font-bold text-3xl sm:text-5xl mt-10 text-center">
         Inspiration for your next adventure
       </h1>
-      <div className="grid sm:grid-cols-3 lg:grid-cols-4  gap-6 mt-8 sm:mt-11 mb-12">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-4  gap-6 mt-8 sm:mt-11 mb-12">
         {inspirations.map((m, i) => {
           return <Card key={i} item={m} />;
         })}
