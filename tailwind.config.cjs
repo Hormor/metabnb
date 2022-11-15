@@ -10,6 +10,7 @@ module.exports = {
       },
       fontFamily: {
         "red-rose": "Red Rose",
+        sora: "Sora",
       },
       maxWidth: {
         1240: "1240px",
